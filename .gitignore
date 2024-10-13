@@ -1,0 +1,40 @@
+# Node.js dependencies
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache
+.npm
+
+# Debugger configurations
+.vscode/
+
+# Temporary files and directories
+tmp/
+temp/
+*.tmp
+*.swp
+
+# Build output
+/dist
+/build
+
+# Coverage directory (for testing)
+coverage/
+
+# pm2 logs and configurations
+.pm2/
+
+# Ignore IDE/project-specific files
+.idea/
+*.iml
