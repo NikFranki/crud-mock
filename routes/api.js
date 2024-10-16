@@ -36,9 +36,26 @@ router.post('/dashboard/delivery_productivity/map/delivery_order/on_hold_list', 
 router.post('/dashboard/delivery_productivity/map/delivery_order/delivered_list', Api.mapDriverDeliveredList);
 router.post('/dashboard/delivery_productivity/map/order_detail', Api.mapOrderDetail);
 
-// wcs api
-router.post('/wcs/login', Api.login);
-router.post('/wcs/user-list', Api.getUserList);
-router.post('/wcs/role-list', Api.getRoleList);
+// wcs api start
+router.post('/user/login', Api.login);
+router.get('/user/logout', Api.logout);
+router.get('/user/check-session', Api.checkSession);
+
+router.post('/user/list', Api.getUserList);
+router.post('/user/log/list', Api.getUserLog);
+router.get('/user/log/detail', Api.getUserLogDetail);
+router.get('/user/detail', Api.getUserInfoByID);
+router.post('/user/create', Api.createUser);
+router.post('/user/edit', Api.editUser);
+router.post('/user/delete', Api.deleteUser);
+
+router.post('/role/list', Api.getRoleList);
+router.post('/role/create', Api.createRole);
+router.post('/role/edit', Api.editRole);
+router.get('/role/detail', Api.getRoleInfoByID);
+router.post('/role/log/list', Api.getRoleLog);
+router.get('/role/log/detail', Api.getRoleLogDetail);
+router.get('/permission/list', Api.getRolePermissionList);
+// wcs api end
 
 module.exports = router;
